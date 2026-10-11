@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Environment files — never commit secrets
+.env
+*.env
+frontend/.env
+frontend/.env.local
+frontend/.env.production
+
+# Build outputs
+frontend/dist/
+frontend/dist-ssr/
+
+# Vector database local storage
+chroma_db/
+
+# Editor & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+.env
+.env.*
+!.env.example

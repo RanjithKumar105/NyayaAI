@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white text-gray-800 font-sans;
+    min-height: 100vh;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+  }
+}
+
+@layer components {
+  /* Prose styles for markdown-rendered AI answers */
+  .prose-answer {
+    @apply text-gray-800 leading-relaxed text-sm;
+  }
+  .prose-answer h1,
+  .prose-answer h2,
+  .prose-answer h3 {
+    @apply font-semibold text-navy-800 mt-4 mb-2;
+  }
+  .prose-answer h1 { @apply text-lg; }
+  .prose-answer h2 { @apply text-base; }
+  .prose-answer h3 { @apply text-sm; }
+  .prose-answer p  { @apply mb-3 last:mb-0; }
+  .prose-answer ul { @apply list-disc pl-5 mb-3 space-y-1; }
+  .prose-answer ol { @apply list-decimal pl-5 mb-3 space-y-1; }
+  .prose-answer li { @apply text-sm; }
+  .prose-answer strong { @apply font-semibold text-navy-800; }
+  .prose-answer em    { @apply italic; }
+  .prose-answer blockquote {
+    @apply border-l-4 border-saffron-400 pl-4 italic text-gray-600 my-3;
+  }
+  .prose-answer code {
+    @apply bg-gray-100 px-1.5 py-0.5 rounded text-xs font-mono text-navy-800;
+  }
+  .prose-answer hr {
+    @apply border-gray-200 my-4;
+  }
+  /* Table styling for markdown tables */
+  .prose-answer table {
+    @apply w-full border-collapse my-3 text-xs sm:text-sm overflow-x-auto block;
+  }
+  .prose-answer thead {
+    @apply bg-navy-50 text-navy-800 font-semibold;
+  }
+  .prose-answer th {
+    @apply border border-gray-200 px-3 py-2 text-left font-semibold;
+  }
+  .prose-answer td {
+    @apply border border-gray-200 px-3 py-2 text-gray-700;
+  }
+  .prose-answer tr:nth-child(even) {
+    @apply bg-gray-50/50;
+  }
+
+  /* Loading dot animation */
+  .loading-dot {
+    @apply w-2 h-2 bg-navy-600 rounded-full inline-block;
+    animation: bounceDots 1.4s infinite ease-in-out both;
+  }
+  .loading-dot:nth-child(1) { animation-delay: -0.32s; }
+  .loading-dot:nth-child(2) { animation-delay: -0.16s; }
+  .loading-dot:nth-child(3) { animation-delay: 0s; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+
+  /* Glassmorphism utility */
+  .glass {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}

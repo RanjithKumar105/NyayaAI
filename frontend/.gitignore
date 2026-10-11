@@ -1,0 +1,23 @@
+# NyayaAI — Dependencies
+node_modules
+dist
+dist-ssr
+*.local
+
+# Environment files — never commit secrets
+.env
+.env.local
+.env.production
+
+# Editor
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db

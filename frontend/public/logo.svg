@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Scales of justice on navy background -->
+  <circle cx="24" cy="24" r="24" fill="#1e3a5f"/>
+  <!-- Balance beam -->
+  <rect x="23" y="12" width="2" height="20" rx="1" fill="#f47c12"/>
+  <!-- Center pivot -->
+  <circle cx="24" cy="12" r="2.5" fill="#fbbf7c"/>
+  <!-- Left pan chain -->
+  <line x1="24" y1="12" x2="13" y2="24" stroke="#fbbf7c" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Right pan chain -->
+  <line x1="24" y1="12" x2="35" y2="24" stroke="#fbbf7c" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Left pan -->
+  <path d="M9 24 Q13 28 17 24" stroke="#fbbf7c" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Right pan -->
+  <path d="M31 24 Q35 28 39 24" stroke="#fbbf7c" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Base -->
+  <rect x="19" y="32" width="10" height="2" rx="1" fill="#fbbf7c"/>
+  <rect x="16" y="34" width="16" height="2" rx="1" fill="#fbbf7c"/>
+  <!-- Chakra dots (Ashoka) -->
+  <circle cx="24" cy="8" r="1.5" fill="#ffffff" opacity="0.8"/>
+</svg>
